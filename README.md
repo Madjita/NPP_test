@@ -16,7 +16,13 @@
 6) Переходим на сайт: http://localhost:3000/
 7) Балуемся
 
+P.s: 
+    Если есть проблемы подключения к базе на пункте 2 или с dotnet build, то
+    откройте файл appsettings.json
+    и замените строку "DefaultConnection": "server=localhost,1433;database=test_npp;User Id=SA;password=Password123@jkl;Trusted_Connection=False;MultipleActiveResultSets=True"
 
+    На свою к примеру:
+        DefaultConnection": "erver=<Имя вашей базы или компьютера>\\SQLEXPRESS;database=nts;Trusted_Connection=True;"
 
 Тестовое НПП <Радиосвязь> отдел 5005
 
