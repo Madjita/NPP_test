@@ -1,4 +1,22 @@
 # NPP_test
+Для запуска (Terminal or cmd):
+
+1) переходим в каталог test_npp к примеру так:
+  cd <путь к паке>/test_npp
+
+2) запускаем создание БД (предварительно установите MS SQL Server):
+    dotnet ef databse update
+
+3) Папка: test_npp - является Project .Net core 6  запускается стандартно =)
+4) Папка: front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
+
+    npm start
+
+5) Переходим на api: http://localhost:5148/swagger/index.html
+6) Переходим на сайт: http://localhost:3000/
+7) Балуемся
+
+
 
 Тестовое НПП <Радиосвязь> отдел 5005
 
