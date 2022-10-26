@@ -19,7 +19,9 @@
 P.s: 
     Если есть проблемы подключения к базе на пункте 2 или с dotnet build, то
     откройте файл appsettings.json
-    и замените строку "DefaultConnection": "server=localhost,1433;database=test_npp;User Id=SA;password=Password123@jkl;Trusted_Connection=False;MultipleActiveResultSets=True"
+    и замените строку 
+    
+    DefaultConnection": "server=localhost,1433;database=test_npp;User Id=SA;password=Password123@jkl;Trusted_Connection=False;MultipleActiveResultSets=True"
 
     На свою к примеру:
         DefaultConnection": "erver=<Имя вашей базы или компьютера>\\SQLEXPRESS;database=nts;Trusted_Connection=True;"
