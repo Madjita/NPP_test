@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6kiphEhhSGPw8UV/6neuk7RuDLnr6YnjU3PWo4VQ6uo=",
+  "Source": "test_npp_api",
+  "BasePath": "_content/test_npp_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_npp_api", "test_npp_api\test_npp_api.csproj", "{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C49832F-9E33-4B42-941C-BBE9F58042D6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7654F9B9-F25F-4D10-B13D-0C59FA03A976}
+	EndGlobalSection
+EndGlobal

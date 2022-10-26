@@ -1,0 +1,4 @@
+﻿<Properties StartupConfiguration="{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.test__npp__api PreferredExecutionTarget="/Applications/Firefox.app" FirstBuild="True" />
+</Properties>
