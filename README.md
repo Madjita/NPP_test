@@ -7,14 +7,10 @@
 3) Выбираем загрузить из файла "test_npp.bak" - лежит в корне проекта
 4) Заходим в папку "test_npp_api_netFramework\test_npp_api_netFramework" и открываем файл "Web.config", где находим строку подключения к базе "DbConnectionLocalhost" и меняем "connectionString= <свою>" на свою естественно :D
 5) Папка: test_npp - является Project .Net core 6  запускается стандартно =)
-<<<<<<< HEAD
 6) Папка:  https://github.com/Madjita/front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
-=======
-6) Папка: front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки): 
-https://github.com/Madjita/front_npp_test
 
->>>>>>> main
 	    npm start
+
 7) Переходим на api: https://localhost:44318/Help
 8) Переходим на сайт: http://localhost:3000/
 9) Балуемся
@@ -28,12 +24,7 @@ https://github.com/Madjita/front_npp_test
     dotnet ef databse update
 
 3) Папка: test_npp - является Project .Net core 6  запускается стандартно =)
-<<<<<<< HEAD
 4) Папка:  https://github.com/Madjita/front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
-=======
-4) Папка: front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
-https://github.com/Madjita/front_npp_test
->>>>>>> main
 
     npm start
 
