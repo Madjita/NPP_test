@@ -11,6 +11,7 @@ namespace test_npp_api.Services.Repository
 
         public Repository(Context context)
         {
+            Console.WriteLine($"Create context {typeof(T).Name}");
             _context = context;
         }
 

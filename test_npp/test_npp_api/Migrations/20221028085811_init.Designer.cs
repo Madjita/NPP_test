@@ -11,7 +11,7 @@ using test_npp_api.Data;
 namespace test_npp_api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221026091721_init")]
+    [Migration("20221028085811_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,7 +40,7 @@ namespace test_npp_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tool");
+                    b.ToTable("Tools");
 
                     b.HasData(
                         new
@@ -116,7 +116,7 @@ namespace test_npp_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
 
                     b.HasData(
                         new

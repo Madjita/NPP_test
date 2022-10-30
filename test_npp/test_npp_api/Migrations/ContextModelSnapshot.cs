@@ -38,7 +38,7 @@ namespace test_npp_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tool");
+                    b.ToTable("Tools");
 
                     b.HasData(
                         new
@@ -114,7 +114,7 @@ namespace test_npp_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
 
                     b.HasData(
                         new

@@ -1,4 +1,51 @@
 ﻿<Properties StartupConfiguration="{A61C7EAC-FFC1-45E3-A99F-86B526E002EA}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="test_npp_api/appsettings.json">
+    <Files>
+      <File FileName="test_npp_api/Program.cs" Line="17" Column="1" />
+      <File FileName="test_npp_api/Controllers/ToolUserController.cs" Line="43" Column="1" />
+      <File FileName="test_npp_api/Services/Tool_User/ToolUserService.cs" Line="44" Column="57" />
+      <File FileName="test_npp_api/Services/Tool_User/IToolUserService.cs" Line="20" Column="39" />
+      <File FileName="test_npp_api/Services/Repository/IRepository.cs" Line="20" Column="30" />
+      <File FileName="test_npp_api/Services/Repository/Repository.cs" Line="38" Column="10" />
+      <File FileName="test_npp_api/Controllers/ToolController.cs" Line="37" Column="65" />
+      <File FileName="test_npp_api/Controllers/UserController.cs" Line="15" Column="2" />
+      <File FileName="test_npp_api/Services/Tool/IToolService.cs" Line="16" Column="65" />
+      <File FileName="test_npp_api/Services/Tool/ToolService.cs" Line="31" Column="24" />
+      <File FileName="test_npp_api/EF_entities/Tool_User.cs" Line="8" Column="1" />
+      <File FileName="test_npp_api/Data/Context.cs" Line="50" Column="29" />
+      <File FileName="test_npp_api/appsettings.json" Line="10" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test_npp" expanded="True">
+            <Node name="test_npp_api" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="EF_entities" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Repository" expanded="True" />
+                <Node name="Tool" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.test__npp__api PreferredExecutionTarget="/Applications/Firefox.app" FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.test__npp__api PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>

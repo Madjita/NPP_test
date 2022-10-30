@@ -9,7 +9,7 @@ namespace test_npp_api.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Tool",
+                name: "Tools",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -19,11 +19,11 @@ namespace test_npp_api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tool", x => x.Id);
+                    table.PrimaryKey("PK_Tools", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,7 +34,7 @@ namespace test_npp_api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -51,21 +51,21 @@ namespace test_npp_api.Migrations
                 {
                     table.PrimaryKey("PK_Tool_User", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Tool_User_Tool_ToolId",
+                        name: "FK_Tool_User_Tools_ToolId",
                         column: x => x.ToolId,
-                        principalTable: "Tool",
+                        principalTable: "Tools",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Tool_User_User_UserId",
+                        name: "FK_Tool_User_Users_UserId",
                         column: x => x.UserId,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
-                table: "Tool",
+                table: "Tools",
                 columns: new[] { "Id", "Count", "Name" },
                 values: new object[,]
                 {
@@ -76,7 +76,7 @@ namespace test_npp_api.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "User",
+                table: "Users",
                 columns: new[] { "Id", "FirstName", "LastName", "MiddleName" },
                 values: new object[,]
                 {
@@ -103,10 +103,10 @@ namespace test_npp_api.Migrations
                 name: "Tool_User");
 
             migrationBuilder.DropTable(
-                name: "Tool");
+                name: "Tools");
 
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Users");
         }
     }
 }

@@ -9,11 +9,16 @@ namespace test_npp_api.Data
 {
     public class Context : DbContext
     {
+        public DbSet<User> Users { get; set; }
+        public DbSet<Tool> Tools { get; set; }
+        public DbSet<Tool_User> Tool_User { get; set; }
+
         public Context(DbContextOptions<Context> options)
         : base(options)
         {
             //Database.EnsureDeleted();
             //Database.EnsureCreated();
+            Console.WriteLine("COntext create c");
         }
 
 
