@@ -9,6 +9,7 @@
 5) Папка: test_npp - является Project .Net core 6  запускается стандартно =)
 6) Папка:  https://github.com/Madjita/front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
 
+        npm i
 	    npm start
 
 7) Переходим на api: https://localhost:44318/Help
@@ -26,7 +27,8 @@
 3) Папка: test_npp - является Project .Net core 6  запускается стандартно =)
 4) Папка:  https://github.com/Madjita/front_npp_test - является React Project запускается командой (естественно не на продакшин, а для отладки):
 
-    npm start
+    npm i
+	npm start
 
 5) Переходим на api: http://localhost:5148/swagger/index.html
 6) Переходим на сайт: http://localhost:3000/
