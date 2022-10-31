@@ -6,6 +6,7 @@ using test_npp_api.Models;
 namespace test_npp_api.Services.Tool
 {
     public interface IToolService :
+        IDisposable,
         IToolServiceRepository
     {
 

@@ -18,6 +18,27 @@ namespace test_npp_api.Services.User
             _userRepository = userRepository;
         }
 
+        private bool disposed = false;
+
+        public virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _toolRepository.Dispose();
+                    _userRepository.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
         public async Task<IEnumerable<EF_entities.User>> GetAllAsync()
         {
             return await _userRepository.GetAllAsync();

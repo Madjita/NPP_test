@@ -11,7 +11,7 @@ using test_npp_api.Data;
 namespace test_npp_api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221028085811_init")]
+    [Migration("20221031005304_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

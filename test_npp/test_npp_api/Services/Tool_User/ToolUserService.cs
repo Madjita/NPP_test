@@ -24,6 +24,28 @@ namespace test_npp_api.Services.Tool_User
             _tool_userRepository = tool_userRepository;
         }
 
+        private bool disposed = false;
+
+        public virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _tool_userRepository.Dispose();
+                    _toolRepository.Dispose();
+                    _userRepository.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
         public async Task<bool> addToolUserAsync(EF_entities.Tool_User newTool)
         {
             try

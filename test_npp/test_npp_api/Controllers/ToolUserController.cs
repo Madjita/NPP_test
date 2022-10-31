@@ -57,6 +57,12 @@ namespace test_npp_api.Controllers
 
            return Ok();
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            _tool_userService.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }
 

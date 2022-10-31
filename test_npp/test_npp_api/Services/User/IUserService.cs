@@ -5,6 +5,7 @@ namespace test_npp_api.Services.User
 {
 
     public interface IUserService :
+        IDisposable,
         IUserServiceRepository
     {
 

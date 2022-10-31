@@ -5,6 +5,7 @@ using test_npp_api.Services.Repository;
 using test_npp_api.EF_entities;
 using test_npp_api.Models;
 using Microsoft.EntityFrameworkCore;
+using test_npp_api.Data;
 
 namespace test_npp_api.Services.Tool
 {
@@ -20,6 +21,27 @@ namespace test_npp_api.Services.Tool
         {
             _toolRepository = toolRepository;
             _userRepository = userRepository;
+        }
+
+        private bool disposed = false;
+
+        public virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _toolRepository.Dispose();
+                    _userRepository.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         public async Task<IEnumerable<EF_entities.Tool>> GetAll_notEmptyAsync()
@@ -47,6 +69,8 @@ namespace test_npp_api.Services.Tool
 
             
         }
+
+       
     }
 }
 
