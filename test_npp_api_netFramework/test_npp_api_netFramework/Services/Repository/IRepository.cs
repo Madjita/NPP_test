@@ -8,7 +8,7 @@ using test_sql.Data;
 
 namespace test_sql.Services.Repository
 {
-    public interface IRepository<T> : IRepositorySync<T>, IRepositoryAsync<T> where T : BaseEntity
+    public interface IRepository<T> : IDisposable,IRepositorySync<T>, IRepositoryAsync<T> where T : BaseEntity
     {
         Context GetContext();
     }
