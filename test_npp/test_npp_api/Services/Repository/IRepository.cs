@@ -4,7 +4,7 @@ using test_npp_api.EF_entities;
 
 namespace test_npp_api.Services.Repository
 {
-    public interface IRepository<T> : IRepositorySync<T>, IRepositoryAsync<T> where T : BaseEntity
+    public interface IRepository<T> : IDisposable,IRepositorySync<T>, IRepositoryAsync<T> where T : BaseEntity
     {
         Context GetContext();
     }
