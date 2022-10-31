@@ -31,6 +31,23 @@ namespace test_sql.Services.Tool_User
             _tool_userRepository = new Repository<EF_entities.Tool_User>(); ;
         }
 
+        public void Dispose() => Dispose(true);
+
+        private bool disposed = false;
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _toolRepository.Dispose();
+                    _userRepository.Dispose();
+                    _tool_userRepository.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
         public async Task<bool> addToolUserAsync(EF_entities.Tool_User newTool)
         {
             try

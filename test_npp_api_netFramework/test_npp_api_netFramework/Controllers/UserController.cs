@@ -28,6 +28,12 @@ namespace test_sql.Controllers
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
         }
+        [NonAction]
+        protected override void Dispose(bool disposing)
+        {
+            _userService.Dispose();
+            base.Dispose(disposing);
+        }
 
         // GET: User
         [Route("api/users")]

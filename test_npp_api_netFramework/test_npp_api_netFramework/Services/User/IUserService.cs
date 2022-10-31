@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using test_sql.Data;
 
 namespace test_sql.Services.User
 {
     public interface IUserService :
+        IDisposable,
         IUserServiceRepository
     {
 

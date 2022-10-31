@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 namespace test_sql.Services.Tool_User
 {
     public interface IToolUserService :
+         IDisposable,
          IToolUserServiceRepository
     {
 

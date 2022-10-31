@@ -22,7 +22,8 @@ namespace test_sql.Controllers
     {
         private readonly IToolUserService _tool_userService = new ToolUserService();
 
-         private JsonSerializerSettings JsonSettings()
+        [NonAction]
+        private JsonSerializerSettings JsonSettings()
          {
              return new JsonSerializerSettings
              {
@@ -31,6 +32,12 @@ namespace test_sql.Controllers
                  ContractResolver = new CamelCasePropertyNamesContractResolver()
              };
          }
+        [NonAction]
+        protected override void Dispose(bool disposing)
+        {
+            _tool_userService.Dispose();
+            base.Dispose(disposing);
+        }
 
         public JsonResult<IEnumerable<EF_entities.Tool_User>> Get()
         {

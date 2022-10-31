@@ -36,6 +36,12 @@ namespace test_sql.Controllers
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
         }
+        [NonAction]
+        protected override void Dispose(bool disposing)
+        {
+            _toolService.Dispose();
+            base.Dispose(disposing);
+        }
 
         // GET: Tool
         [Route("api/tools")]
@@ -56,5 +62,6 @@ namespace test_sql.Controllers
             return json;
         }
 
+        
     }
 }

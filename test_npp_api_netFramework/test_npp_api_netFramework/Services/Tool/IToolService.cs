@@ -8,7 +8,8 @@ using test_sql.EF_entities;
 namespace test_sql.Services.Tool
 {
     public interface IToolService :
-         IToolServiceRepository
+        IDisposable,
+        IToolServiceRepository
     {
 
     }

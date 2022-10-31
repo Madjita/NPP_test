@@ -28,6 +28,22 @@ namespace test_sql.Services.Tool
             _userRepository = new Repository<EF_entities.User>(); ;
         }
 
+        public void Dispose() => Dispose(true);
+
+        private bool disposed = false;
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _toolRepository.Dispose();
+                    _userRepository.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
 
         public async Task<IEnumerable<EF_entities.Tool>> GetAll_notEmptyAsync()
         {
